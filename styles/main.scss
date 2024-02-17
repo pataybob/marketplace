@@ -1,0 +1,67 @@
+@font-face {
+    font-family: EestiPro Bold ;
+    src: url(../fonts/gteestiprodisplay_bold.otf);
+}
+@font-face {
+    font-family: EestiPro Regular ;
+    src: url(../fonts/gteestiprodisplay_regular.otf);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: EestiPro Regular ;
+    font-size: 16px;
+    a{
+        text-decoration: none;
+    }
+    ul,li,ol{
+        list-style: none;
+    }
+}
+
+.wrapper{
+    .container{
+        max-width: 1400px;
+        margin: 0 auto;
+        .pre__header{
+            padding: 15px 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .left__side{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                .currency{
+                    color: #767676;
+                    font-size: 14px;
+                }
+                .geo{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 5px;
+                    img{
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+                .adress{
+                    a{
+                        color: #0051ff;
+                        font-size: 15px;
+                    }
+                }
+            }
+            .right__side{
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+                p{
+                    color: #767676;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

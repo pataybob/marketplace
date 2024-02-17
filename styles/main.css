@@ -1,1 +1,63 @@
-/*# sourceMappingURL=main.css.map */
+@font-face {
+  font-family: EestiPro Bold;
+  src: url(../fonts/gteestiprodisplay_bold.otf);
+}
+@font-face {
+  font-family: EestiPro Regular;
+  src: url(../fonts/gteestiprodisplay_regular.otf);
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: EestiPro Regular;
+  font-size: 16px;
+}
+* a {
+  text-decoration: none;
+}
+* ul, * li, * ol {
+  list-style: none;
+}
+
+.wrapper .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.wrapper .container .pre__header {
+  padding: 15px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrapper .container .pre__header .left__side {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.wrapper .container .pre__header .left__side .currency {
+  color: #767676;
+  font-size: 14px;
+}
+.wrapper .container .pre__header .left__side .geo {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.wrapper .container .pre__header .left__side .geo img {
+  width: 15px;
+  height: 15px;
+}
+.wrapper .container .pre__header .left__side .adress a {
+  color: #0051ff;
+  font-size: 15px;
+}
+.wrapper .container .pre__header .right__side {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.wrapper .container .pre__header .right__side p {
+  color: #767676;
+  font-size: 14px;
+}/*# sourceMappingURL=main.css.map */
