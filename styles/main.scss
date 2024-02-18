@@ -141,5 +141,26 @@
                 }
             }
         }
+        .category{
+            margin-top: 20px;
+            .category__wrapper{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 20px;
+                .category__item{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    img{
+                        width: 15px;
+                        height: 14px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
     }
 }

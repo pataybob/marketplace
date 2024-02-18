@@ -130,4 +130,25 @@
 }
 .wrapper .container header .header__nav .header__item p {
   font-size: 14px;
+}
+.wrapper .container .category {
+  margin-top: 20px;
+}
+.wrapper .container .category .category__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+.wrapper .container .category .category__wrapper .category__item {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.wrapper .container .category .category__wrapper .category__item img {
+  width: 15px;
+  height: 14px;
+}
+.wrapper .container .category .category__wrapper .category__item p {
+  font-size: 14px;
 }/*# sourceMappingURL=main.css.map */
