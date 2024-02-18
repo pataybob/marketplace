@@ -11,7 +11,7 @@
   margin: 0px;
   box-sizing: border-box;
   font-family: EestiPro Regular;
-  font-size: 16px;
+  font-size: 14px;
 }
 * a {
   text-decoration: none;
@@ -151,4 +151,7 @@
 }
 .wrapper .container .category .category__wrapper .category__item p {
   font-size: 14px;
+}
+.wrapper .container main {
+  margin-top: 40px;
 }/*# sourceMappingURL=main.css.map */
