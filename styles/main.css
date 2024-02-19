@@ -6,12 +6,17 @@
   font-family: EestiPro Regular;
   src: url(../fonts/gteestiprodisplay_regular.otf);
 }
+@font-face {
+  font-family: EestiPro Light;
+  src: url(../fonts/gteestiprodisplay_light.otf);
+}
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
   font-family: EestiPro Regular;
   font-size: 14px;
+  color: #070707;
 }
 * a {
   text-decoration: none;
@@ -156,52 +161,149 @@
   margin-top: 20px;
   display: flex;
   flex-direction: column;
+}
+.wrapper .container main .main__header {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
-.wrapper .container main .product__category a {
+.wrapper .container main .main__header .product__category a {
   color: #0051ff;
 }
-.wrapper .container main .product {
+.wrapper .container main .main__header .product {
   display: flex;
   flex-direction: column;
 }
-.wrapper .container main .product .product__name {
+.wrapper .container main .main__header .product .product__name {
   font-size: 24px;
   color: #070707;
   font-weight: 700;
 }
-.wrapper .container main .product .product__revievs {
-  margin-top: 20px;
+.wrapper .container main .main__header .product .product__revievs {
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.wrapper .container main .product .product__revievs .revievs {
+.wrapper .container main .main__header .product .product__revievs .revievs {
   display: flex;
   flex-direction: row;
   gap: 20px;
   align-items: center;
 }
-.wrapper .container main .product .product__revievs .revievs .stars {
+.wrapper .container main .main__header .product .product__revievs .revievs .stars {
   align-items: center;
   display: flex;
 }
-.wrapper .container main .product .product__revievs .revievs .stars a {
+.wrapper .container main .main__header .product .product__revievs .revievs .stars a {
   padding: 0 0 0 10px;
   color: #0051ff;
   font-weight: 600;
 }
-.wrapper .container main .product .product__revievs .revievs .revievs__item {
+.wrapper .container main .main__header .product .product__revievs .revievs .revievs__item {
   color: #0051ff;
   display: flex;
   flex-direction: row;
 }
-.wrapper .container main .product .product__revievs .revievs .revievs__item a {
+.wrapper .container main .main__header .product .product__revievs .revievs .revievs__item a {
   padding: 0 0 0 10px;
   color: #0051ff;
   font-weight: 600;
 }
-.wrapper .container main .product .product__revievs .product__code {
+.wrapper .container main .main__header .product .product__revievs .product__code {
   color: #767676;
   font-weight: 300;
+}
+.wrapper .container main .main__header .product .after {
+  display: block;
+  padding: 10px 0;
+}
+.wrapper .container main .main__header .product .after::after {
+  content: "";
+  height: 1px;
+  display: block;
+  width: 100%;
+  background-color: #767676;
+  opacity: 0.4;
+}
+.wrapper .container main .main__body {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.wrapper .container main .main__body .photo__side {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.wrapper .container main .main__body .photo__side .previev__photo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
+.wrapper .container main .main__body .photo__side .previev__photo .selected {
+  border: 2px solid #0051ff;
+  border-radius: 6px;
+}
+.wrapper .container main .main__body .photo__side .main__photo img {
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+}
+.wrapper .container main .main__body .info__side {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.wrapper .container main .main__body .info__side .brand {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+.wrapper .container main .main__body .info__side .brand .brand__name {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .container main .main__body .info__side .brand .brand__name p {
+  font-size: 16px;
+}
+.wrapper .container main .main__body .info__side .brand .brand__name .original {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.wrapper .container main .main__body .info__side .brand .brand__name .original p {
+  font-size: 14px;
+  color: #767676;
+}
+.wrapper .container main .main__body .info__side .product__type {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.wrapper .container main .main__body .info__side .product__type p {
+  color: #767676;
+  font-size: 15px;
+  font-family: EestiPro Light;
+}
+.wrapper .container main .main__body .info__side .product__type .type__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.wrapper .container main .main__body .info__side .product__type .type__grid .grid__item {
+  padding: 10px 16px;
+}
+.wrapper .container main .main__body .info__side .product__type .type__grid .grid__item a {
+  font-size: 16px;
+  color: #070707;
+}
+.wrapper .container main .main__body .info__side .product__type .type__grid .selected {
+  border: #0051ff 2px solid;
+  border-radius: 8px;
 }/*# sourceMappingURL=main.css.map */

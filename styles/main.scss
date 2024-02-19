@@ -6,12 +6,17 @@
     font-family: EestiPro Regular ;
     src: url(../fonts/gteestiprodisplay_regular.otf);
 }
+@font-face {
+    font-family: EestiPro Light;
+    src: url(../fonts/gteestiprodisplay_light.otf);
+  }
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: EestiPro Regular ;
     font-size: 14px;
+    color: #070707;
     
     a{
         text-decoration: none;
@@ -167,54 +172,155 @@
             margin-top: 20px;
             display: flex;
             flex-direction: column;
-            gap: 20px;
-            .product__category{
-                a{
-                    color: #0051ff;
-                }
-                
-            }
-            .product{
+            .main__header{
                 display: flex;
                 flex-direction: column;
-                .product__name{
-                    font-size: 24px;
-                    color: #070707;
-                    font-weight: 700;
+                gap: 20px;
+                .product__category{
+                    a{
+                        color: #0051ff;
+                    }
+                    
                 }
-                .product__revievs{
-                    margin-top: 20px;
+                .product{
                     display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    .revievs{
+                    flex-direction: column;
+                    .product__name{
+                        font-size: 24px;
+                        color: #070707;
+                        font-weight: 700;
+                    }
+                    .product__revievs{
+                        margin-top: 10px;
                         display: flex;
                         flex-direction: row;
-                        gap: 20px;
-                        align-items: center;
-                        .stars{
-                            align-items: center;
-                            display: flex;
-                            a{
-                                padding: 0 0 0 10px;
-                                color: #0051ff;
-                                font-weight: 600;
-                            }
-                        }
-                        .revievs__item{
-                            color: #0051ff;
+                        justify-content: space-between;
+                        .revievs{
                             display: flex;
                             flex-direction: row;
-                            a{
-                                padding: 0 0 0 10px;
+                            gap: 20px;
+                            align-items: center;
+                            .stars{
+                                align-items: center;
+                                display: flex;
+                                a{
+                                    padding: 0 0 0 10px;
+                                    color: #0051ff;
+                                    font-weight: 600;
+                                }
+                            }
+                            .revievs__item{
                                 color: #0051ff;
-                                font-weight: 600;
+                                display: flex;
+                                flex-direction: row;
+                                a{
+                                    padding: 0 0 0 10px;
+                                    color: #0051ff;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                        .product__code{
+                            color: #767676;
+                            font-weight: 300;
+                        }
+                    }
+                    .after{
+                        display: block;
+                        padding: 10px 0;
+                        &::after{
+                            content: "";
+                            height: 1px;
+                            display: block;
+                            width: 100%;
+                            background-color: #767676;
+                            opacity: 0.4;
+                        }
+                    }
+                }
+            }
+            .main__body{
+                margin-top: 15px;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                .photo__side{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    .previev__photo{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        cursor: pointer;
+                        .selected{
+                            border: 2px solid #0051ff;
+                            border-radius: 6px;
+                        }
+                    }
+                    .main__photo{
+                        img{
+                            border-radius: 0 30px 30px 0;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .info__side{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    .brand{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 10px;
+                        justify-content: center;
+                        .brand__photo{
+                        }
+                        .brand__name{
+                            display: flex;
+                            flex-direction: column;
+                            p{
+                                font-size: 16px ;
+                            }
+                            .original{
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                gap: 10px;
+                                p{
+                                    font-size: 14px;
+                                    color: #767676;
+                                }
                             }
                         }
                     }
-                    .product__code{
-                        color: #767676;
-                        font-weight: 300;
+                    .product__type{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        p{
+                            color: #767676;
+                            font-size: 15px;
+                            font-family: EestiPro Light;
+                        }
+                        .type__grid{
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            grid-template-rows: repeat(2, 1fr);
+                            grid-column-gap: 20px;
+                            grid-row-gap: 20px;
+                            .grid__item{
+                                padding: 10px 16px;
+                                a{
+                                    font-size: 16px;
+                                    color: #070707 ;
+                                }
+                            }
+                            .selected{
+                                border: #0051ff 2px solid;
+                                border-radius: 8px;
+                            }
+                        }
                     }
                 }
             }
