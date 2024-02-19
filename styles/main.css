@@ -153,5 +153,55 @@
   font-size: 14px;
 }
 .wrapper .container main {
-  margin-top: 40px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.wrapper .container main .product__category a {
+  color: #0051ff;
+}
+.wrapper .container main .product {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .container main .product .product__name {
+  font-size: 24px;
+  color: #070707;
+  font-weight: 700;
+}
+.wrapper .container main .product .product__revievs {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrapper .container main .product .product__revievs .revievs {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+.wrapper .container main .product .product__revievs .revievs .stars {
+  align-items: center;
+  display: flex;
+}
+.wrapper .container main .product .product__revievs .revievs .stars a {
+  padding: 0 0 0 10px;
+  color: #0051ff;
+  font-weight: 600;
+}
+.wrapper .container main .product .product__revievs .revievs .revievs__item {
+  color: #0051ff;
+  display: flex;
+  flex-direction: row;
+}
+.wrapper .container main .product .product__revievs .revievs .revievs__item a {
+  padding: 0 0 0 10px;
+  color: #0051ff;
+  font-weight: 600;
+}
+.wrapper .container main .product .product__revievs .product__code {
+  color: #767676;
+  font-weight: 300;
 }/*# sourceMappingURL=main.css.map */
