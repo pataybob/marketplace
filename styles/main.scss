@@ -243,6 +243,7 @@
                 margin-top: 15px;
                 display: flex;
                 flex-direction: row;
+                justify-content: space-between;
                 gap: 30px;
                 .photo__side{
                     display: flex;
@@ -273,7 +274,7 @@
                         display: flex;
                         flex-direction: row;
                         gap: 10px;
-                        justify-content: center;
+                        justify-content: start;
                         .brand__photo{
                         }
                         .brand__name{
@@ -319,6 +320,167 @@
                             .selected{
                                 border: #0051ff 2px solid;
                                 border-radius: 8px;
+                            }
+                        }
+                        .description{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 15px;
+                            .type{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                align-items: center;
+                                h6{
+                                    color: #767676;
+                                    font-family: EestiPro Light;
+                                }
+                                p{
+                                    color: #0051ff;
+                                }
+                            }
+                            .go-to{
+                                margin-top: 10px;
+                                color: #0051ff;
+                            }
+                        }
+                    }
+                }
+                .price__side{
+                    max-width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 50px;
+                    .price__card{
+                        border-radius: 30px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        .discount__price{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: end;
+                            gap: 10px;
+                            span{
+                                width: 122px;
+                                height: 40px;
+                                background-color: #5AC15C;
+                                border-radius: 8px;
+                                font-size: 26px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                color: #FFF;
+                                font-weight: 700;
+                                letter-spacing: 2px;
+                            }
+                        }
+                        .price{
+                            display: flex;
+                            flex-direction: row;
+                            gap: 5px;
+                            align-items: center;
+                            color: #767676;
+                            font-size: 14px;
+                            .gray{
+                                font-size: 20px;
+                                color: #767676;
+                                font-weight: 600;
+                            }
+                            span.prev{
+                                text-decoration: line-through;
+                                color: #767676;
+                                font-family: EestiPro Light;
+                            }
+                        }
+                        .credit{
+                            text-align: center;
+                            letter-spacing: 0.5px;
+                            span{
+                                padding: 5px;
+                                background-color: #FED540;
+                                border-radius: 8px;
+                            }
+                        }
+                        .buttons{
+                            display: flex;
+                            flex-direction: row;
+                            gap: 10px;
+                            justify-content: space-between;
+                            .cart__delivery{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                gap: 10px;
+                                .delivery__btn{
+                                    width: 146px;
+                                    height: 57px;
+                                    color: #FFF;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    border-radius: 15px;
+                                    font-size: 16px;
+    
+                                    background-color: #E53659;
+    
+                                }
+                                p{
+                                    font-size: 13px;
+                                }
+                            }
+                            .cart{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                gap: 10px;
+                                .cart__btn{
+                                    width: 146px;
+                                    height: 57px;
+                                    color: #FFF;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    border-radius: 15px;
+                                    font-size: 16px;
+    
+                                    background-color: #005BFF;
+    
+                                }
+                                p{
+                                    font-size: 13px;
+                                }
+
+                            }
+                        }
+                    }
+                    .delivery{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        h1{
+                            font-size: 22px;
+                        }
+                        .first__adress{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 10px;
+                            p{
+                                font-size: 16px;
+                            }
+                            .method{
+                                font-size: 16px;
+                                color: #767676;
+                            }
+                        }
+                        .shipping{
+                            p{
+                                font-size: 16px;
+                            }
+                            .method{
+                                font-size: 16px;
+                                color: #767676;
                             }
                         }
                     }
