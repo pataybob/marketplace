@@ -42,6 +42,14 @@
                 .currency{
                     color: #767676;
                     font-size: 14px;
+                    z-index: 3;
+                    &:hover{
+                        background-color: #b8b8b8;
+                        z-index: 1;
+                        border-radius: 2px;
+                        padding: 2px;
+                        margin: -2px;
+                    }
                 }
                 .geo{
                     display: flex;
@@ -66,6 +74,9 @@
                 p{
                     color: #767676;
                     font-size: 14px;
+                    &:hover{
+                        color: #005BFF;
+                    }
                 }
             }
         }
@@ -91,6 +102,9 @@
                 border-radius: 8px;
                 p{
                     color: #FFF;
+                }
+                &:hover{
+                    background-color: #1264fb;
                 }
                 
             }
@@ -158,12 +172,17 @@
                     display: flex;
                     flex-direction: row;
                     gap: 10px;
+                    cursor: pointer;
                     img{
                         width: 15px;
                         height: 14px;
                     }
                     p{
                         font-size: 14px;
+                        &:hover{
+                            color: #005BFF;
+                            transition: 0.2s ease;
+                        }
                     }
                 }
             }
@@ -311,10 +330,19 @@
                             grid-column-gap: 20px;
                             grid-row-gap: 20px;
                             .grid__item{
-                                padding: 10px 16px;
+                                text-align: center;
                                 a{
+                                    padding: 10px 16px;
                                     font-size: 16px;
                                     color: #070707 ;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                                &:hover{    
+                                    width: 100%;
+                                    border: #3a74f2 2px solid;
+                                    border-radius: 8px;
                                 }
                             }
                             .selected{
@@ -350,7 +378,7 @@
                     max-width: 30%;
                     display: flex;
                     flex-direction: column;
-                    gap: 50px;
+                    gap: 60px;
                     .price__card{
                         border-radius: 30px;
                         display: flex;
@@ -423,6 +451,9 @@
                                     font-size: 16px;
     
                                     background-color: #E53659;
+                                    &:hover{
+                                        background-color: #e24d6b;
+                                    }
     
                                 }
                                 p{
@@ -445,6 +476,9 @@
                                     font-size: 16px;
     
                                     background-color: #005BFF;
+                                    &:hover{
+                                        background-color: #1c68f4;
+                                    }
     
                                 }
                                 p{
